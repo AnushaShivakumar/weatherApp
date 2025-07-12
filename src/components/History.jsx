@@ -163,7 +163,8 @@ const History = () => {
 								onChange={(e) =>
 									setEditedData({ ...editedData, location: e.target.value })
 								}
-								className="form-control mb-2"
+								placeholder="Location"
+								className="form-control mb-2 text-black bg-white"
 							/>
 							<input
 								type="number"
@@ -171,7 +172,8 @@ const History = () => {
 								onChange={(e) =>
 									setEditedData({ ...editedData, temperature: e.target.value })
 								}
-								className="form-control mb-2"
+								placeholder="Temperature in °C"
+								className="form-control mb-2 text-black bg-white"
 							/>
 							<input
 								type="text"
@@ -179,7 +181,8 @@ const History = () => {
 								onChange={(e) =>
 									setEditedData({ ...editedData, condition: e.target.value })
 								}
-								className="form-control mb-2"
+								placeholder="Weather condition"
+								className="form-control mb-2 text-black bg-white"
 							/>
 							<input
 								type="number"
@@ -187,7 +190,8 @@ const History = () => {
 								onChange={(e) =>
 									setEditedData({ ...editedData, humidity: e.target.value })
 								}
-								className="form-control mb-2"
+								placeholder="Humidity %"
+								className="form-control mb-2 text-black bg-white"
 							/>
 							<input
 								type="number"
@@ -195,7 +199,8 @@ const History = () => {
 								onChange={(e) =>
 									setEditedData({ ...editedData, windSpeed: e.target.value })
 								}
-								className="form-control mb-2"
+								placeholder="Wind speed (kph)"
+								className="form-control mb-2 text-black bg-white"
 							/>
 							<button
 								className="btn btn-sm btn-success me-2"
