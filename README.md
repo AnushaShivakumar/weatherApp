@@ -1,52 +1,129 @@
 <!-- @format -->
 
-# 🌤️ Weather Dashboard
+# 🌦️ Weather Forecast App
 
-A sleek, responsive weather dashboard built with modern tools like **React**, **Vite**, and **OpenWeatherMap**. This app allows users to search weather conditions for any city or use their current location to view real-time data and a 5-day forecast – all visualized with animated icons and an interactive map.
+This project is a full-stack weather forecasting application built as part of **Technical Assessments 1 & 2** for the **AI Engineer Intern - AI/ML/GenAI Applications** at **PM Accelerator**.
 
----
-
-## 🧠 What This App Offers
-
-- **Live Weather Data**: Real-time weather details powered by OpenWeatherMap.
-- **5-Day Forecast**: Cleanly filtered to show one key forecast per day (at noon).
-- **Geolocation Support**: Fetch local weather automatically.
-- **Dark/Light Mode**: Theme toggle for better accessibility and aesthetics.
-- **Interactive Maps**: Built-in Leaflet maps centered on the queried location.
-- **Animated Icons**: Weather visualized using `react-animated-weather` for an elegant UI.
-- **Error Handling & Loading States**: Friendly feedback for users in case of delays or failures.
+It demonstrates real-time weather data retrieval, user interaction, data persistence, CRUD operations, PDF/CSV/JSON exports, error boundaries, theming, and user personalization — all aligned with the assessment goals.
 
 ---
 
-## ⚙️ Tech Stack
+## ✨ Key Features
 
-- **React** – UI library for building interactive interfaces.
-- **Vite** – Fast build tool and development server.
-- **OpenWeatherMap API** – Source of weather and forecast data.
-- **React Leaflet** – Integrates Leaflet maps into React.
-- **Bootstrap 5** – Responsive design and layout utilities.
-- **react-animated-weather** – Minimal, animated weather icon set.
+### ✅ Tech Assessment 1 — Core Weather App
+
+- **🔍 Location-based Weather Search:**
+  - Search by city, zip code, GPS coordinates, or landmarks.
+  - Input validation with graceful error handling.
+- **📍 Current Location Weather:**
+
+  - Uses browser’s geolocation API to fetch weather.
+
+- **☀️ Real-time Weather Display:**
+
+  - Pulls real data using the [WeatherAPI](https://www.weatherapi.com/).
+  - Displays temperature, humidity, wind, UV index, and more.
+
+- **🗓️ 5-Day Forecast:**
+
+  - Includes average temperature and condition for the next 5 days.
+
+- **🗺️ Integrated Map View:**
+
+  - Dynamic OpenStreetMap embedded with city coordinates.
+
+- **🎨 Dynamic Backgrounds + Theme Switch:**
+
+  - Automatically adjusts background based on weather conditions.
+  - Toggle between light and dark themes.
+
+- **🍬 Weather Icons & Emojis:**
+
+  - Weather info enriched with expressive emojis for UX enhancement.
+
+- **⚡ Loading Spinner:**
+  - Shows spinner while API calls are in progress.
 
 ---
 
-## 🎯 Benefits
+### ✅ Tech Assessment 2 — Advanced Features
 
-- **Componentized Architecture**: Code is broken down into reusable components like `SearchBar`, `CurrentWeatherCard`, `ForecastCard`, and `MapCard`, making the app maintainable and scalable.
-- **Visually Intuitive**: With map view and icons, users can easily interpret weather patterns.
-- **User-Friendly**: Thoughtful feedback during loading, errors, or no results improves UX.
-- **Developer-Friendly**: Clean file structure, readable logic, and extensible design.
+#### 2.1 - CRUD Functionality with Persistence
+
+- **📝 CREATE:**
+
+  - Every weather search is stored in MongoDB along with forecast details.
+
+- **📖 READ:**
+
+  - A `/history` page shows all previous weather entries.
+
+- **✏️ UPDATE:**
+
+  - Edit location, temperature, or condition on any entry (with validation).
+
+- **🗑️ DELETE:**
+
+  - Remove individual records from the database with confirmation.
+
+- **📅 Validations:**
+  - Ensures location validity and input coherence (e.g., no duplicates for the same day/location).
 
 ---
 
-## 📌 Data Sources
+### 2.2 - Additional API Integrations
 
-- Weather: [OpenWeatherMap](https://openweathermap.org/)
-- Maps: [OpenStreetMap](https://www.openstreetmap.org/)
+- **🗺️ Google Maps View (OpenStreetMap):**
+  - Embedded location preview for context.
+- **🧠 Smart Weather Deduplication:**
+  - Prevents saving same location’s weather more than once per day.
+  - Shows toast notification if duplicate detected.
 
 ---
 
-## 💡 Ideal Use Cases
+### 2.3 - Data Export Options
 
-- Personal weather tracking
-- Embedding in travel or event planning apps
-- Educational purposes or frontend practice
+- **📄 Export Formats:**
+  - JSON
+  - CSV
+  - PDF (with emojis and forecast neatly formatted)
+
+---
+
+### 2.4 - Hourly Weather Forecast
+
+- **🕒 Hour-by-Hour Forecast:**
+  - Interactive toggle to show/hide hourly forecast.
+  - View detailed hourly temperature, humidity, wind, and condition.
+  - Helps users plan their day with precision.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:**
+
+  - React.js (with Vite)
+  - Bootstrap 5 / react-bootstrap
+  - Leaflet + OpenStreetMap
+  - React Router, React Toastify
+  - jsPDF for PDF generation
+
+- **Backend:**
+
+  - Node.js + Express.js
+  - MongoDB (with Mongoose)
+  - CORS, dotenv for environment config
+
+- **Other:**
+  - Error Boundary wrapper
+  - Robots.txt for search engine exclusion
+  - Responsive & accessible UI
+
+---
+
+## 👩‍💻 About the Developer
+
+This project was built by **Anusha Shiva Kumar** as part of the PMA Bootcamp Technical Assessment. The app includes About Me & About PM Accelerator modals for introduction and context.
+
+---
