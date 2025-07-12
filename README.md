@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+<!-- @format -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌤️ Weather Dashboard
 
-## Available Scripts
+A sleek, responsive weather dashboard built with modern tools like **React**, **Vite**, and **OpenWeatherMap**. This app allows users to search weather conditions for any city or use their current location to view real-time data and a 5-day forecast – all visualized with animated icons and an interactive map.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧠 What This App Offers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Live Weather Data**: Real-time weather details powered by OpenWeatherMap.
+- **5-Day Forecast**: Cleanly filtered to show one key forecast per day (at noon).
+- **Geolocation Support**: Fetch local weather automatically.
+- **Dark/Light Mode**: Theme toggle for better accessibility and aesthetics.
+- **Interactive Maps**: Built-in Leaflet maps centered on the queried location.
+- **Animated Icons**: Weather visualized using `react-animated-weather` for an elegant UI.
+- **Error Handling & Loading States**: Friendly feedback for users in case of delays or failures.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** – UI library for building interactive interfaces.
+- **Vite** – Fast build tool and development server.
+- **OpenWeatherMap API** – Source of weather and forecast data.
+- **React Leaflet** – Integrates Leaflet maps into React.
+- **Bootstrap 5** – Responsive design and layout utilities.
+- **react-animated-weather** – Minimal, animated weather icon set.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎯 Benefits
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Componentized Architecture**: Code is broken down into reusable components like `SearchBar`, `CurrentWeatherCard`, `ForecastCard`, and `MapCard`, making the app maintainable and scalable.
+- **Visually Intuitive**: With map view and icons, users can easily interpret weather patterns.
+- **User-Friendly**: Thoughtful feedback during loading, errors, or no results improves UX.
+- **Developer-Friendly**: Clean file structure, readable logic, and extensible design.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📌 Data Sources
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Weather: [OpenWeatherMap](https://openweathermap.org/)
+- Maps: [OpenStreetMap](https://www.openstreetmap.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💡 Ideal Use Cases
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Personal weather tracking
+- Embedding in travel or event planning apps
+- Educational purposes or frontend practice
